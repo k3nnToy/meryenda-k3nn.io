@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Meryenda sa Kanto PH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #loginForm {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #ff6f61;
+      font-size: 1.8rem;
+      font-family: 'Pacifico', cursive;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff6f61;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    p a {
+      color: #ff914d;
+      text-decoration: none;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      #loginForm {
+        padding: 20px;
+        width: 90%;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form id="loginForm">
+    <h2>Login to Your Account</h2>
+    <input type="text" id="username" name="username" placeholder="Username" required /><br />
+    <input type="password" id="password" name="password" placeholder="Password" required /><br />
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </form>
+
+  <script>
+    // Function to handle login
+    function loginForm(event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+
+      let inputUsername = document.getElementById("username").value.trim();
+      let inputPassword = document.getElementById("password").value;
+
+      // Get saved credentials from localStorage
+      let savedUsername = localStorage.getItem("username");
+      let savedPassword = localStorage.getItem("password");
+
+      if (!savedUsername || !savedPassword) {
+        alert("No account found. Please register first.");
+        return;
+      }
+
+      if (inputUsername === savedUsername && inputPassword === savedPassword) {
+        alert("Login Successful!");
+        // Redirect to your homepage
+        window.location.href = "home.html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+
+    // Attach the event listener to the form
+    document.getElementById("loginForm").addEventListener("submit", loginForm);
+  </script>
+
+</body>
+</html>

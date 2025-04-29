@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+
+  <nav>
+    <h1>Meryenda sa Kanto PH</h1>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="category.html">Categories</a>
+      <a href="cultural_insights.html">Cultural Insights</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="#" id="logout-link">Logout</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="cultural_insights.html">Cultural Insights</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" id="logout-link-mobile">Logout</a></li>
+    </ul>
+  </div>
+    <section class="cultural-insights" style="background-color: #fff6f6; padding: 50px 20px; font-family: 'Poppins', sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <h2 style="text-align: center; color: #ca5858; margin-bottom: 30px;">🇵🇭 Cultural Insights About Filipino Snacks</h2>
+      
+          <div style="display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            
+            <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <h3 style="color: #ca5858;">Food as a Social Bond</h3>
+              <p>In Filipino culture, snacks or <em>meryenda</em> are more than just food — they’re a way to gather, bond, and show love to friends and family.</p>
+              <p style="font-style: italic;">"In the Philippines, you rarely eat alone. Sharing food is a form of care."</p>
+            </div>
+      
+            <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <h3 style="color: #ca5858;">Heritage Through Ingredients</h3>
+              <p>Local ingredients like coconut, sticky rice, and banana are essential to many traditional snacks, passed down from generation to generation.</p>
+              <p style="font-style: italic;">"Dishes like <strong>bibingka</strong> or <strong>puto</strong> carry the flavors of our ancestors."</p>
+            </div>
+      
+            <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <h3 style="color: #ca5858;">Celebration & Ritual</h3>
+              <p>Snacks like <em>sapin-sapin</em> and <em>kutsinta</em> are staples at fiestas, town gatherings, and even ancestral rituals — symbols of thanks and community.</p>
+              <p style="font-style: italic;">"Filipino snacks are offerings of love and tradition."</p>
+            </div>
+      
+            <div style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <h3 style="color: #ca5858;">A Blend of Cultures</h3>
+              <p>From Spanish-inspired <strong>ensaymada</strong> to Chinese-influenced <strong>hopia</strong>, Filipino snacks represent a flavorful fusion of cultures.</p>
+              <p style="font-style: italic;">"Our snacks are bite-sized stories of colonization, resilience, and identity."</p>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+
+      <script>
+
+const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+         let logoutLinks = [
+      document.getElementById("logout-link"),
+      document.getElementById("logout-link-mobile")
+    ];
+  
+    for (let i = 0; i < logoutLinks.length; i++) {
+      logoutLinks[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        alert("You have been logged out.");
+        window.location.href = "index.html";
+      });
+    }
+      </script>
+      
+</body>
+</html>

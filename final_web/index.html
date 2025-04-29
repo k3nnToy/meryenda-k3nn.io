@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meryenda sa Kanto PH - Filipino Snacks</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>Meryenda sa Kanto PH</h1>
+    <div>
+      <a href="login.html">Log In</a>
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+
+
+  <section class="hero-carousel">
+    <div class="carousel" id="carousel">
+      <div class="slide">
+        <img src="image/KAKANIN.png" alt="Kakanin" />
+        <div class="overlay">
+          <h1>WELCOME TO Meryenda sa Kanto PH</h1>
+          <p>A visual and educational portal to discover traditional Filipino snacks.</p>
+          <a href="#" class="cta-button">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="image/streetfoods.jpg" alt="Street Food" />
+        <div class="overlay">
+          <h1>STREET FOOD FAVORITES</h1>
+          <p>Savor the vibrant flavors of local street delicacies.</p>
+          <a href="#" class="cta-button">EXPLORE</a>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="image/pandisal.webp" alt="Bakery Items" />
+        <div class="overlay">
+          <h1>BAKERY CLASSICS</h1>
+          <p>Delight in nostalgic bread and pastries from your childhood.</p>
+          <a href="#" class="cta-button">DISCOVER</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </section>
+
+
+  <div class="category-flex">
+    <section id="categories" class="categories">
+      <h2>Snack Categories</h2>
+      <div class="category-links">
+        <button class="category-tab active" data-tab="kakanin">Kakanin</button>
+        <button class="category-tab" data-tab="streetfood">Street Food</button>
+        <button class="category-tab" data-tab="bakery">Bakery Treats</button>
+      </div>
+
+      <div class="category-cards">
+        
+        <div class="card show" data-category="kakanin">
+          <img src="image/image.png" alt="Bibingka">
+          <div class="card-body">
+            <h3>Bibingka</h3>
+            <p>Classic rice cake made with coconut milk.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card show" data-category="kakanin">
+          <img src="image/Puto.webp" alt="Puto">
+          <div class="card-body">
+            <h3>Puto</h3>
+            <p>Soft steamed rice cake, often topped with cheese.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card show" data-category="kakanin">
+          <img src="image/sapin-sapin.jpg" alt="Sapin-sapin">
+          <div class="card-body">
+            <h3>Sapin-sapin</h3>
+            <p>Layered sticky rice cake with coconut and flavors.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card show" data-category="kakanin">
+          <img src="image/Kutsinta.jpg" alt="Kutsinta">
+          <div class="card-body">
+            <h3>Kutsinta</h3>
+            <p>Sticky brown rice cake served with grated coconut.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+
+      
+        <div class="card" data-category="streetfood">
+          <img src="image/kwekwek.webp" alt="Kwek-kwek">
+          <div class="card-body">
+            <h3>Kwek-kwek</h3>
+            <p>Orange battered deep-fried quail eggs.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/fishball.jpg" alt="Fishball">
+          <div class="card-body">
+            <h3>Fishball</h3>
+            <p>Pinoy favorite street snack with sweet or spicy sauce.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/taho.jpg" alt="Taho">
+          <div class="card-body">
+            <h3>Taho</h3>
+            <p>Sweet silken tofu with syrup and sago pearls.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/isaw.webp" alt="Isaw">
+          <div class="card-body">
+            <h3>Isaw</h3>
+            <p>Grilled chicken or pork intestines served on skewers.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+
+       
+        <div class="card" data-category="bakery">
+          <img src="image/pandesall.jpg" alt="Pandesal">
+          <div class="card-body">
+            <h3>Pandesal</h3>
+            <p>Traditional Filipino bread roll, soft and fluffy.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/ensaymada.webp" alt="Ensaymada">
+          <div class="card-body">
+            <h3>Ensaymada</h3>
+            <p>Buttery pastry with cheese and sugar on top.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/spanish.jpg" alt="Spanish Bread">
+          <div class="card-body">
+            <h3>Spanish Bread</h3>
+            <p>Sweet roll filled with buttery sugar mixture.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/monay.jpg" alt="Monay">
+          <div class="card-body">
+            <h3>Monay</h3>
+            <p>Dense, slightly sweet bread roll often eaten with butter or cheese.</p>
+            <a href="login.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <footer style="background-color: #ca5858; color: #fff; padding: 20px 0; text-align: center; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      <p style="margin: 0;"> <strong>Meryenda PH</strong> | For educational and informational purposes only.</p>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Home</a> |
+        <a href="#about" style="color: #fff; margin: 0 10px; text-decoration: none;">About</a> |
+        <a href="#contact" style="color: #fff; margin: 0 10px; text-decoration: none;">Contact</a>
+      </div>
+      <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+        Made with by Filipino food lovers
+      </div>
+    </div>
+  </footer>
+
+ 
+  <script>
+    let carousel = document.getElementById("carousel");
+    let totalSlides = carousel.children.length;
+    let index = 0;
+  
+    function showSlide(i) {
+      index = (i + totalSlides) % totalSlides;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+  
+    setInterval(() => showSlide(index + 1), 5000);
+  
+    document.querySelectorAll(".open-login-btn").forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "login.html";
+      });
+    });
+  
+    document.querySelectorAll(".category-tab").forEach((tab) => {
+      tab.addEventListener("click", function () {
+        document.querySelectorAll(".category-tab").forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+  
+        let selected = this.dataset.tab;
+        document.querySelectorAll(".card").forEach(card => {
+          card.classList.toggle("show", card.dataset.category === selected);
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

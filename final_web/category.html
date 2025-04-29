@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+
+    
+  <nav>
+    <h1>Meryenda sa Kanto PH</h1>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="category.html">Categories</a>
+      <a href="cultural_insights.html">Cultural Insights</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="#" id="logout-link">Logout</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+
+  
+  <div id="mobile-menu">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="cultural_insights.html">Cultural Insights</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" id="logout-link-mobile">Logout</a></li>
+    </ul>
+  </div>    
+    
+<div class="category-flex">
+    <section id="categories" class="categories">
+      <h2>Snack Categories</h2>
+  
+      <div class="category-links">
+        <button class="category-tab active" data-tab="kakanin">Kakanin</button>
+        <button class="category-tab" data-tab="streetfood">Street Food</button>
+        <button class="category-tab" data-tab="bakery">Bakery Treats</button>
+      </div>
+  
+      <div class="category-cards">
+       
+        <div class="card show" data-category="kakanin">
+          <img src="image/image.png" alt="Bibingka">
+          <div class="card-body">
+            <h3>Bibingka</h3>
+            <p>Classic rice cake made with coconut milk.</p>
+            <a href="Bibingka.html" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card show" data-category="kakanin">
+          <img src="image/Puto.webp" alt="Puto">
+          <div class="card-body">
+            <h3>Puto</h3>
+            <p>Soft steamed rice cake, often topped with cheese.</p>
+            <a href="puto.html" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+        <div class="card show" data-category="kakanin">
+          <img src="image/sapin-sapin.jpg" alt="Sapin-sapin">
+          <div class="card-body">
+            <h3>Sapin-sapin</h3>
+            <p>Layered sticky rice cake with coconut and flavors.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <div class="card show" data-category="kakanin">
+          <img src="image/biko.jpg" alt="Biko">
+          <div class="card-body">
+            <h3>Biko</h3>
+            <p>Sticky rice with coconut milk and brown sugar, topped with latik..</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        
+        <div class="card show" data-category="kakanin">
+          <img src="image/suman.jpg" alt="Suman">
+          <div class="card-body">
+            <h3>Suman</h3>
+            <p>Rice wrapped in leaves, steamed and served with sugar or latik.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+         
+        
+        <div class="card show" data-category="kakanin">
+          <img src="image/maja.jpg" alt="Maja Blanca">
+          <div class="card-body">
+            <h3>Maja Blanca</h3>
+            <p>Creamy coconut pudding, often with corn or latik.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        
+        <div class="card show" data-category="kakanin">
+          <img src="image/kasaba.JPG" alt="Cassava Cake">
+          <div class="card-body">
+            <h3>Cassava Cake</h3>
+            <p>Grated cassava baked with coconut and condensed milk..</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        
+        <div class="card show" data-category="kakanin">
+          <img src="image/puto.jpg" alt="Puto Bumbong">
+          <div class="card-body">
+            <h3>Puto Bumbong</h3>
+            <p>Purple rice steamed in bamboo, with butter, coconut, and sugar.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        
+        
+        
+   
+  
+        <!-- Street Food -->
+        <div class="card" data-category="streetfood">
+          <img src="image/kwekwek.webp" alt="Kwek-kwek">
+          <div class="card-body">
+            <h3>Kwek-kwek</h3>
+            <p>Orange battered deep-fried quail eggs.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/fishball.jpg" alt="Fishball">
+          <div class="card-body">
+            <h3>Fishball</h3>
+            <p>Pinoy favorite street snack with sweet or spicy sauce.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/taho.jpg" alt="Taho">
+          <div class="card-body">
+            <h3>Taho</h3>
+            <p>Sweet silken tofu with syrup and sago pearls.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/pork_bbq.avif" alt="pork_bbq">
+          <div class="card-body">
+            <h3>Pork BBQ</h3>
+            <p> Skewered marinated pork pieces, grilled to perfection.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="card" data-category="streetfood">
+          <img src="image/proven.jpg" alt="Proven">
+          <div class="card-body">
+            <h3>Proven</h3>
+            <p>Deep-fried chicken proventriculus (a part of the digestive system).</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/siomai.jpg" alt="Siomai">
+          <div class="card-body">
+            <h3>Siomai  </h3>
+            <p>Steamed dumplings (Chinese-Filipino influence), often served with chili garlic oil.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/lumpia.jpg" alt="Lumpiang Ubod">
+          <div class="card-body">
+            <h3>Lumpiang Ubod</h3>
+            <p>Fresh or fried lumpia filled with ubod (heart of palm), sometimes with pork and shrimp too.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="streetfood">
+          <img src="image/adidas.jpg" alt="Adidas">
+          <div class="card-body">
+            <h3>Adidas</h3>
+            <p>Ggrilled chicken feet.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <!-- Bakery -->
+        <div class="card" data-category="bakery">
+          <img src="image/pandesall.jpg" alt="Pandesal">
+          <div class="card-body">
+            <h3>Pandesal</h3>
+            <p>Traditional Filipino bread roll, soft and fluffy.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/ensaymada.webp" alt="Ensaymada">
+          <div class="card-body">
+            <h3>Ensaymada</h3>
+            <p>Buttery pastry with cheese and sugar on top.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/spanish.jpg" alt="Spanish Bread">
+          <div class="card-body">
+            <h3>Spanish Bread</h3>
+            <p>Sweet roll filled with buttery sugar mixture.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+        <div class="card" data-category="bakery">
+          <img src="image/Pan-de-Coco.jpg" alt="Pan de Coco">
+          <div class="card-body">
+            <h3>Pan de Coco</h3>
+            <p>Pan de Coco is a classic Filipino bread that's soft, fluffy, and filled with a sweet coconut mixture.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <div class="card" data-category="bakery">
+          <img src="image/Choco Lanay.jpg" alt="Choco Lanay">
+          <div class="card-body">
+            <h3>Choco Lanay</h3>
+            <p>Dense, slightly sweet bread roll often eaten with butter or cheese.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <div class="card" data-category="bakery">
+          <img src="image/loaf bread.avif" alt="Loaf bread">
+          <div class="card-body">
+            <h3>Loaf Bread</h3>
+            <p> Loaf bread — soft, slightly sweet, and perfect for everyday meals and snacks.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <div class="card" data-category="bakery">
+          <img src="image/starbread.jpg" alt="Star Bread">
+          <div class="card-body">
+            <h3>Star Bread</h3>
+            <p>Star Bread is a popular Filipino bread that is known for its star-like shape and sweet, buttery taste.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+        <div class="card" data-category="bakery">
+          <img src="image/monay.jpg" alt="Monay">
+          <div class="card-body">
+            <h3>Monay</h3>
+            <p>Dense, slightly sweet bread roll often eaten with butter or cheese.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  
+  <footer style="background-color: #ca5858; color: #fff; padding: 20px 0; text-align: center; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      <p style="margin: 0;"> <strong>Meryenda PH</strong> | For educational and informational purposes only.</p>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: #fff; margin: 0 10px; text-decoration: none;">Home</a> |
+        <a href="#about" style="color: #fff; margin: 0 10px; text-decoration: none;">About</a> |
+        <a href="#contact" style="color: #fff; margin: 0 10px; text-decoration: none;">Contact</a>
+      </div>
+      <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+        Made with  Filipino food lovers
+      </div>
+    </div>
+  </footer>
+  
+    
+
+  <script>
+
+const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+
+let logoutLinks = [
+      document.getElementById("logout-link"),
+      document.getElementById("logout-link-mobile")
+    ];
+  
+    for (let i = 0; i < logoutLinks.length; i++) {
+      logoutLinks[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        alert("You have been logged out.");
+        window.location.href = "index.html";
+      });
+    }
+
+document.querySelectorAll(".category-tab").forEach((tab) => {
+      tab.addEventListener("click", function () {
+        document.querySelectorAll(".category-tab").forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        let selected = this.dataset.tab;
+
+        document.querySelectorAll(".card").forEach(card => {
+          card.classList.toggle("show", card.dataset.category === selected);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
